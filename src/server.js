@@ -54,6 +54,6 @@ app.use('/api', addressRoutes);
 app.use('/api', orderRoutes);
 app.use('/api', orderAdminRoutes);
 
-app.listen(process.env.PORT, () => {
+app.listen(process.env.PORT || 2000, () => {
   console.log(`Server is running on port ${process.env.PORT}`);
 });
